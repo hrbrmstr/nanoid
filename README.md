@@ -8,7 +8,9 @@ by](https://img.shields.io/badge/Keybase-Verified-brightgreen.svg)](https://keyb
 %](https://img.shields.io/badge/Signed_Commits-100%25-lightgrey.svg)
 [![R-CMD-check](https://github.com/hrbrmstr/nanoid/workflows/R-CMD-check/badge.svg)](https://github.com/hrbrmstr/nanoid/actions?query=workflow%3AR-CMD-check)
 [![Linux build
-Status](https://travis-ci.org/hrbrmstr/nanoid.svg?branch=master)](https://travis-ci.org/hrbrmstr/nanoid)  
+Status](https://travis-ci.org/hrbrmstr/nanoid.svg?branch=master)](https://travis-ci.org/hrbrmstr/nanoid)
+[![Coverage
+Status](https://codecov.io/gh/hrbrmstr/nanoid/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/nanoid)
 ![Minimal R
 Version](https://img.shields.io/badge/R%3E%3D-3.6.0-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -37,6 +39,7 @@ The following functions are implemented:
 ## Installation
 
 ``` r
+remotes::install_github("hrbrmstr/nanoid")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
@@ -54,60 +57,60 @@ packageVersion("nanoid")
 
 ``` r
 NANOIDgenerate()
-## [1] "YhhMxpsbjAWcWv5F6gzrY"
+## [1] "9LlXQv_BHj1X1ZfntGFtR"
 
 NANOIDgenerate(alphabet = nanoid_dict[["numbers"]])
-## [1] "461549604138656349869"
+## [1] "044406255383489412581"
 
 NANOIDgenerate(alphabet = nanoid_dict[["lowercase"]])
-## [1] "rqiavmoelpvkbhfwjjhsp"
+## [1] "ebralaoqxsronwgxxwjzo"
 
 NANOIDgenerate(alphabet = nanoid_dict[["uppercase"]])
-## [1] "CMNGEHPHINTMMDHIMIJNT"
+## [1] "PPHHWIKVLYTGYINLWWFJF"
 
 NANOIDgenerate(alphabet = nanoid_dict[["hexadecimal_lowercase"]])
-## [1] "ef585b89bfe001706230a"
+## [1] "5aa442ce40d4d2fb0ec0b"
 
 NANOIDgenerate(alphabet = nanoid_dict[["hexadecimal_uppercase"]])
-## [1] "4E63F57D1A75ED577E569"
+## [1] "A21422FADEE86B009C58F"
 
 NANOIDgenerate(alphabet = nanoid_dict[["nolookalikes"]])
-## [1] "nAej4WJBFNK6cxiiAmpMG"
+## [1] "TRw9titDkQbmqa6kMicUf"
 
 NANOIDgenerate(alphabet = nanoid_dict[["nolookalikes_safe"]])
-## [1] "jRzTwCrzzmPRkNwhgrBPG"
+## [1] "pJKB7wLwHBQmQh88WBjNr"
 
 NANOIDgenerate(alphabet = nanoid_dict[["alphanumeric"]])
-## [1] "abhkHhGyYkSg653n20Qyt"
+## [1] "dUxcl5Jqzn2Da698lOpYL"
 ```
 
 ``` r
 NANOIDgenerate(size = 10)
-## [1] "QlZEx13mRW"
+## [1] "HpyTj2WrPb"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["numbers"]])
-## [1] "5093295566"
+## [1] "2985374791"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["lowercase"]])
-## [1] "pqkfqwuxxx"
+## [1] "okqesasdcx"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["uppercase"]])
-## [1] "QQYCCDTSEG"
+## [1] "YYXUVJJHHZ"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["hexadecimal_lowercase"]])
-## [1] "d4db31246b"
+## [1] "1ca95c6ad1"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["hexadecimal_uppercase"]])
-## [1] "7A9EB9052C"
+## [1] "63CB499F3A"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["nolookalikes"]])
-## [1] "P97Gd3N3MW"
+## [1] "KddaNenDFB"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["nolookalikes_safe"]])
-## [1] "M7rfQbrrH7"
+## [1] "GMBfRQ9WJ9"
 
 NANOIDgenerate(size = 10, alphabet = nanoid_dict[["alphanumeric"]])
-## [1] "gGEJRGPi17"
+## [1] "XGXZPkbmjt"
 ```
 
 ## nanoid Metrics
