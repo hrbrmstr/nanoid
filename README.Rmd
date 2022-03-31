@@ -39,6 +39,46 @@ packageVersion("nanoid")
 
 ```
 
+```{r ex-01}
+NANOIDgenerate()
+
+NANOIDgenerate(alphabet = nanoid_dict[["numbers"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["lowercase"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["uppercase"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["hexadecimal_lowercase"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["hexadecimal_uppercase"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["nolookalikes"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["nolookalikes_safe"]])
+
+NANOIDgenerate(alphabet = nanoid_dict[["alphanumeric"]])
+```
+
+```{r ex-02}
+NANOIDgenerate(size = 10)
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["numbers"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["lowercase"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["uppercase"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["hexadecimal_lowercase"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["hexadecimal_uppercase"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["nolookalikes"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["nolookalikes_safe"]])
+
+NANOIDgenerate(size = 10, alphabet = nanoid_dict[["alphanumeric"]])
+```
+
 ## nanoid Metrics
 
 ```{r cloc, echo=FALSE}

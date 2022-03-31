@@ -4,15 +4,23 @@
 \name{nanoid}
 \alias{nanoid}
 \alias{nanoid-package}
-\title{...}
+\title{Tools to Generate Short, Secure, URL-friendly, and Unique String Identifiers}
 \description{
-A good description goes here otherwise CRAN checks fail.
+Nano IDs are comparable to UUID v4 (random-based). They have a similar number of random
+bits in the ID (126 in Nano ID and 122 in UUID), so they have similar collision probabilities.
+Nano ID also use a bigger alphabet, so a similar number of random bits are packed in just 21
+symbols instead of 36. The C++ cooe implements the algorithm specified by Andrey Sitnik.
+}
+\references{
+\preformatted{- NanoID algorithm and JavaScript implementation <https://github.com/ai/nanoid>
+- C++ implementation: <https://github.com/mcmikecreations/nanoid_cpp>
+}
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://git.rud.is/hrbrmstr/nanoid}
-  \item Report bugs at \url{https://git.rud.is/hrbrmstr/nanoid/issues}
+  \item \url{https://github.com/hrbrmstr/nanoid}
+  \item Report bugs at \url{https://github.com/hrbrmstr/nanoid/issues}
 }
 
 }

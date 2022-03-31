@@ -1,24 +1,34 @@
 Package: nanoid
 Type: Package
-Title: nanoid Title Goes Here Otherwise CRAN Checks Fail
+Title: Tools to Generate Short, Secure, URL-friendly, and Unique String Identifiers
 Version: 0.1.0
 Date: 2022-03-31
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 
-           comment = c(ORCID = "0000-0001-5670-2640"))
+           comment = c(ORCID = "0000-0001-5670-2640")),
+    person("Mykola", "Morozov", email = "mcmikecreations@gmail.com", role = "aut",
+           comment = "nanoid C++ library <https://github.com/mcmikecreations/nanoid_cpp>"),
+    person("Andrey", "Sitnik", email = "andrey@sitnik.ru", role = "aut",
+           comment = "Nano ID algorithm specification <https://github.com/ai/nanoid>")
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
-URL: https://git.rud.is/hrbrmstr/nanoid
-BugReports: https://git.rud.is/hrbrmstr/nanoid/issues
+Description: Nano IDs are comparable to UUID v4 (random-based). They have a similar number of random
+    bits in the ID (126 in Nano ID and 122 in UUID), so they have similar collision probabilities.
+    Nano ID also use a bigger alphabet, so a similar number of random bits are packed in just 21 
+    symbols instead of 36. The C++ code implements the algorithm specified by Andrey Sitnik.
+URL: https://github.com/hrbrmstr/nanoid
+BugReports: https://github.com/hrbrmstr/nanoid/issues
 Encoding: UTF-8
-License: AGPL
+SystemRequirements: C++11
+NeedsCompilation: yes
+License: MIT + file LICENSE
 Suggests:
     tinytest
 Depends:
     R (>= 3.6.0)
 Imports:
-    httr2,
-    jsonlite
+    Rcpp
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+LinkingTo: 
+    Rcpp
